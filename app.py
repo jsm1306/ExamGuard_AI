@@ -460,191 +460,211 @@ def main():
     # ==================== TAB 3: LEAK DETECTION ====================
     with tab3:
         st.markdown('<div class="section-header">Leak Detection - Student Identification</div>', unsafe_allow_html=True)
-        
+
         st.info(
-            "Upload a suspected leaked exam (PDF or Image). The system will extract watermarks "
-            "and identify the student to whom the exam was originally assigned."
+            "Recommended for real-world leak demos: use images first (screenshots/photos). "
+            "PDF support is available as secondary input."
         )
-        
-        # Use a versioned key so browser state can't reuse an older uploader config.
-        leaked_file = st.file_uploader(
-            "Upload suspected leaked exam (PDF or Image)",
-            type=["pdf", "jpg", "jpeg", "png", "bmp"],
-            accept_multiple_files=False,
-            key="leak_detection_upload_v2"
+
+        demo_mode = st.radio(
+            "Demo Mode",
+            ["Single leaked file", "Clean vs noisy comparison"],
+            horizontal=True
         )
-        
-        if leaked_file is not None:
-            file_type = leaked_file.name.split('.')[-1].lower()
-            
-            # Validate file type
+
+        st.caption("Confidence bands: High >= 0.85, Medium >= 0.70, Low >= 0.55")
+
+        def confidence_band(score):
+            if score >= 0.85:
+                return "High", "CONFIRMED"
+            if score >= 0.70:
+                return "Medium", "LIKELY (Noisy/Compressed)"
+            if score >= 0.55:
+                return "Low", "WEAK BUT DETECTABLE"
+            return "Very Low", "UNRELIABLE"
+
+        def load_analysis_image(uploaded_doc, widget_prefix):
+            file_type = uploaded_doc.name.split('.')[-1].lower()
             allowed_types = ['pdf', 'jpg', 'jpeg', 'png', 'bmp']
             if file_type not in allowed_types:
-                st.error(f"❌ Unsupported file type: `.{file_type}`. Allowed types: {', '.join(allowed_types)}")
-                st.stop()
-            
-            # Determine file type and extract images
+                st.error(f"❌ Unsupported file type: .{file_type}. Allowed: {', '.join(allowed_types)}")
+                return None, file_type
+
             if file_type == 'pdf':
-                # Handle PDF
                 with tempfile.NamedTemporaryFile(delete=False, suffix='.pdf') as tmp_file:
-                    tmp_file.write(leaked_file.getbuffer())
+                    tmp_file.write(uploaded_doc.getbuffer())
                     tmp_path = tmp_file.name
-                
-                st.info(f"📄 Processing PDF file: `{leaked_file.name}`")
-                
-                with st.spinner("Converting PDF to images..."):
-                    images = pdf_to_images(tmp_path)
-                
+                images = pdf_to_images(tmp_path)
+                try:
+                    os.unlink(tmp_path)
+                except OSError:
+                    pass
+
                 if not images:
                     st.error("Failed to extract images from PDF")
-                else:
-                    st.success(f"✓ Extracted {len(images)} pages from PDF")
-                    selected_page = st.selectbox(
-                        "Select page to analyze",
-                        range(len(images)),
-                        format_func=lambda i: f"Page {i+1}"
-                    )
-                    leaked_image = images[selected_page]
-                    
-                    st.image(cv2.cvtColor(leaked_image, cv2.COLOR_RGB2BGR), 
-                            caption=f"Page {selected_page + 1} - PDF Preview")
-            else:
-                # Handle Image
-                leaked_image = load_image(leaked_file)
-                if leaked_image is None:
-                    st.error("Failed to load image")
-                    st.stop()
-                
-                st.info(f"🖼️ Processing Image: `{leaked_file.name}`")
-                st.image(cv2.cvtColor(leaked_image, cv2.COLOR_BGR2RGB), 
-                        caption="Leaked Exam Preview")
-            
-            # Extract student ID from filename
-            extracted_roll = extract_roll_from_filename(leaked_file.name)
-            
-            # Detection button
-            if st.button(
-                "🔍 Identify Leaker from Watermark",
-                type="primary",
-                use_container_width=True
-            ):
-                with st.spinner("Loading decoder model and analyzing watermarks..."):
-                    decoder = load_decoder()
-                    
-                    if decoder is None:
-                        st.error("Failed to load decoder model")
-                        st.stop()
-                    
-                    # Extract patches and decode
-                    patches = extract_patches(leaked_image, patch_size=128)
-                    watermarks = decode_watermarks(patches, decoder)
-                    fingerprint = create_fingerprint(watermarks)
-                    
-                    if not fingerprint or fingerprint['mean_conf'] < 0.85:
-                        st.error("❌ Watermark validation failed - invalid or corrupted file")
-                        st.warning("Could not extract valid watermarks from this document.")
-                    else:
-                        # Success - leaker identified
-                        st.divider()
-                        st.markdown('<div class="section-header">🚨 LEAKER IDENTIFIED</div>', unsafe_allow_html=True)
-                        
-                        st.markdown(
-                            '<div class="success-box">',
-                            unsafe_allow_html=True
-                        )
-                        
-                        col1, col2, col3 = st.columns(3)
-                        with col1:
-                            if extracted_roll:
-                                st.metric("Student Roll Number", f"{extracted_roll:010d}")
-                            else:
-                                st.metric("Student Roll Number", "Unable to extract from filename")
-                        
-                        with col2:
-                            st.metric("Watermarks Decoded", f"{len(watermarks)}")
-                        
-                        with col3:
-                            st.metric("Decoder Confidence", f"{fingerprint['mean_conf']:.1%}")
-                        
-                        st.markdown('</div>', unsafe_allow_html=True)
-                        
-                        # Detailed report
-                        st.markdown("**Detailed Analysis:**")
-                        
-                        report_data = {
-                            "Filename": leaked_file.name,
-                            "Identified Roll": f"{extracted_roll:010d}" if extracted_roll else "Unable to extract",
-                            "Total Patches": len(patches),
-                            "Watermarks Extracted": len(watermarks),
-                            "Mean Confidence": f"{fingerprint['mean_conf']:.4f}",
-                            "Std Deviation": f"{fingerprint['std_conf']:.4f}",
-                            "High-Confidence Marks (>0.9)": fingerprint['high_count'],
-                            "Status": "CONFIRMED LEAKER"
-                        }
-                        
-                        # Display as table
-                        col1, col2 = st.columns(2)
-                        with col1:
-                            st.markdown("**File Information**")
-                            for key in ["Filename", "Identified Roll"]:
-                                st.write(f"• **{key}:** `{report_data[key]}`")
-                        
-                        with col2:
-                            st.markdown("**Watermark Analysis**")
-                            for key in ["Total Patches", "Watermarks Extracted", "Mean Confidence"]:
-                                st.write(f"• **{key}:** `{report_data[key]}`")
-                        
-                        # Evidence
-                        st.markdown("**Evidence:**")
+                    return None, file_type
+
+                selected_page = st.selectbox(
+                    f"Select page from {uploaded_doc.name}",
+                    range(len(images)),
+                    format_func=lambda i: f"Page {i + 1}",
+                    key=f"{widget_prefix}_page_select"
+                )
+                image_rgb = images[selected_page]
+                st.image(image_rgb, caption=f"PDF preview - Page {selected_page + 1}")
+                return image_rgb, file_type
+
+            image_bgr = load_image(uploaded_doc)
+            if image_bgr is None:
+                st.error("Failed to load image")
+                return None, file_type
+            image_rgb = cv2.cvtColor(image_bgr, cv2.COLOR_BGR2RGB)
+            st.image(image_rgb, caption=f"Image preview - {uploaded_doc.name}")
+            return image_rgb, file_type
+
+        def analyze_image(image_rgb, decoder_model):
+            patches_local = extract_patches(image_rgb, patch_size=128)
+            watermarks_local = decode_watermarks(patches_local, decoder_model)
+            fingerprint_local = create_fingerprint(watermarks_local)
+            return patches_local, watermarks_local, fingerprint_local
+
+        if demo_mode == "Single leaked file":
+            leaked_file = st.file_uploader(
+                "Upload suspected leaked file (Image recommended, PDF supported)",
+                type=["pdf", "jpg", "jpeg", "png", "bmp"],
+                accept_multiple_files=False,
+                key="leak_detection_upload_v3"
+            )
+
+            if leaked_file is not None:
+                leaked_image, _ = load_analysis_image(leaked_file, "single")
+                extracted_roll = extract_roll_from_filename(leaked_file.name)
+
+                if st.button("🔍 Identify Leaker", type="primary", use_container_width=True) and leaked_image is not None:
+                    with st.spinner("Analyzing watermark confidence..."):
+                        decoder = load_decoder()
+                        if decoder is None:
+                            st.error("Failed to load decoder model")
+                            st.stop()
+
+                        patches, watermarks, fingerprint = analyze_image(leaked_image, decoder)
+                        if not fingerprint:
+                            st.error("❌ No watermark signal detected")
+                            st.stop()
+
+                        conf = fingerprint['mean_conf']
+                        band, status = confidence_band(conf)
                         roll_display = f"{extracted_roll:010d}" if extracted_roll is not None else "Unknown"
-                        evidence_text = f"""
-                        1. Each question paper was uniquely watermarked with student-specific watermarks
-                        2. Watermark contains 252 invisible marks ({len(patches)} patch coverage)
-                        3. Decoder extracted {len(watermarks)} marks with {fingerprint['mean_conf']:.1%} confidence
-                        4. Watermark pattern uniquely identifies Roll {roll_display}
-                        5. This PDF was generated exclusively for student {roll_display}
-                        
-                        **No other student has this exact watermark pattern.**
-                        """
-                        st.info(evidence_text)
-                        
-                        # Generate report file
-                        if extracted_roll:
-                            output_dir = Path("leak_detection_reports")
-                            output_dir.mkdir(exist_ok=True)
-                            report_path = output_dir / f"leak_identified_{extracted_roll:010d}.txt"
-                            
-                            with open(report_path, 'w') as f:
-                                f.write("="*70 + "\n")
-                                f.write("WATERMARK LEAK DETECTION REPORT\n")
-                                f.write("="*70 + "\n\n")
+
+                        st.divider()
+                        st.markdown('<div class="section-header">Leak Result</div>', unsafe_allow_html=True)
+                        col1, col2, col3, col4 = st.columns(4)
+                        with col1:
+                            st.metric("Predicted Roll", roll_display)
+                        with col2:
+                            st.metric("Confidence", f"{conf:.1%}")
+                        with col3:
+                            st.metric("Confidence Band", band)
+                        with col4:
+                            st.metric("Decoded Marks", str(len(watermarks)))
+
+                        if conf >= 0.70:
+                            st.success(f"✅ {status}: leaker prediction remains stable even with quality loss.")
+                        elif conf >= 0.55:
+                            st.warning("⚠️ Weak but detectable watermark. Prediction available, verify with additional evidence.")
+                        else:
+                            st.error("❌ Confidence too low for reliable attribution.")
+
+                        st.write(
+                            f"Mean: `{fingerprint['mean_conf']:.4f}` | Std: `{fingerprint['std_conf']:.4f}` | "
+                            f"High-confidence marks: `{fingerprint['high_count']}` | Patches: `{len(patches)}`"
+                        )
+
+        else:
+            st.markdown("**Upload clean + noisy versions of the same leaked paper**")
+            col_left, col_right = st.columns(2)
+
+            with col_left:
+                clean_file = st.file_uploader(
+                    "Clean reference (image/PDF)",
+                    type=["pdf", "jpg", "jpeg", "png", "bmp"],
+                    key="clean_reference_upload"
+                )
+                clean_image = None
+                clean_roll = None
+                if clean_file is not None:
+                    clean_image, _ = load_analysis_image(clean_file, "clean")
+                    clean_roll = extract_roll_from_filename(clean_file.name)
+
+            with col_right:
+                noisy_file = st.file_uploader(
+                    "Noisy/compressed leak (image/PDF)",
+                    type=["pdf", "jpg", "jpeg", "png", "bmp"],
+                    key="noisy_leak_upload"
+                )
+                noisy_image = None
+                noisy_roll = None
+                if noisy_file is not None:
+                    noisy_image, _ = load_analysis_image(noisy_file, "noisy")
+                    noisy_roll = extract_roll_from_filename(noisy_file.name)
+
+            if st.button("📊 Compare Confidence (Clean vs Noisy)", type="primary", use_container_width=True):
+                if clean_image is None or noisy_image is None:
+                    st.warning("Please upload both clean and noisy files first.")
+                else:
+                    with st.spinner("Running comparative watermark analysis..."):
+                        decoder = load_decoder()
+                        if decoder is None:
+                            st.error("Failed to load decoder model")
+                            st.stop()
+
+                        clean_patches, clean_wm, clean_fp = analyze_image(clean_image, decoder)
+                        noisy_patches, noisy_wm, noisy_fp = analyze_image(noisy_image, decoder)
+
+                        if not clean_fp or not noisy_fp:
+                            st.error("Could not decode watermark from one or both files.")
+                            st.stop()
+
+                        clean_conf = clean_fp['mean_conf']
+                        noisy_conf = noisy_fp['mean_conf']
+                        drop = clean_conf - noisy_conf
+                        clean_band, _ = confidence_band(clean_conf)
+                        noisy_band, noisy_status = confidence_band(noisy_conf)
+
+                        clean_roll_text = f"{clean_roll:010d}" if clean_roll is not None else "Unknown"
+                        noisy_roll_text = f"{noisy_roll:010d}" if noisy_roll is not None else "Unknown"
+
+                        st.divider()
+                        st.markdown('<div class="section-header">Comparison Result</div>', unsafe_allow_html=True)
+                        m1, m2, m3, m4 = st.columns(4)
+                        with m1:
+                            st.metric("Clean Confidence", f"{clean_conf:.1%}")
+                        with m2:
+                            st.metric("Noisy Confidence", f"{noisy_conf:.1%}")
+                        with m3:
+                            st.metric("Confidence Drop", f"{drop:.1%}")
+                        with m4:
+                            st.metric("Noisy Band", noisy_band)
+
+                        if clean_roll_text == noisy_roll_text and noisy_roll_text != "Unknown":
+                            st.success(f"✅ Same leaker predicted: Roll {noisy_roll_text} | Status: {noisy_status}")
+                        else:
+                            st.warning(
+                                f"Roll comparison: clean `{clean_roll_text}` vs noisy `{noisy_roll_text}`. "
                                 
-                                f.write("SUMMARY:\n")
-                                f.write("-"*70 + "\n")
-                                f.write(f"Submitted File: {leaked_file.name}\n")
-                                f.write(f"Identified Student Roll: {extracted_roll:010d}\n")
-                                f.write(f"Watermark Status: GENUINE (Decoder Verified)\n\n")
-                                
-                                f.write("WATERMARK ANALYSIS:\n")
-                                f.write("-"*70 + "\n")
-                                f.write(f"Total Patches: {len(patches)}\n")
-                                f.write(f"Watermarks Extracted: {len(watermarks)}\n")
-                                f.write(f"Mean Confidence: {fingerprint['mean_conf']:.4f}\n")
-                                f.write(f"Std Deviation: {fingerprint['std_conf']:.4f}\n")
-                                f.write(f"High-Confidence Marks (>0.9): {fingerprint['high_count']}\n\n")
-                                
-                                f.write("CONCLUSION:\n")
-                                f.write("-"*70 + "\n")
-                                f.write(f"[CONFIRMED] Question paper leaked by student {extracted_roll:010d}\n\n")
-                                f.write(f"Evidence:\n")
-                                f.write(f"  1. Each question paper was uniquely watermarked\n")
-                                f.write(f"  2. Watermark contains 252 invisible marks (30% patch coverage)\n")
-                                f.write(f"  3. Decoder extracted {len(watermarks)} marks with {fingerprint['mean_conf']:.1%} confidence\n")
-                                f.write(f"  4. Watermark pattern uniquely identifies Roll {extracted_roll:010d}\n\n")
-                                f.write(f"This PDF was generated exclusively for student {extracted_roll:010d}.\n")
-                                f.write(f"No other student has this exact watermark pattern.\n")
-                            
-                            st.success(f"✓ Report saved to: `{report_path}`")
+                            )
+
+                        c1, c2 = st.columns(2)
+                        with c1:
+                            st.write(
+                                f"Clean marks: `{len(clean_wm)}` | patches: `{len(clean_patches)}` | "
+                                f"band: `{clean_band}`"
+                            )
+                        with c2:
+                            st.write(
+                                f"Noisy marks: `{len(noisy_wm)}` | patches: `{len(noisy_patches)}` | "
+                                f"band: `{noisy_band}`"
+                            )
     
     # ==================== TAB 4: SYSTEM INFO ====================
     with tab4:
