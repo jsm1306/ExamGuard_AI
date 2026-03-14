@@ -1,0 +1,706 @@
+{
+  "2310080001": {
+    "mean_confidence": 0.9524080753326416,
+    "std_confidence": 0.10420315712690353,
+    "max_confidence": 0.9958072304725647,
+    "min_confidence": 0.22683273255825043,
+    "num_watermarks": 252,
+    "high_confidence_count": 237
+  },
+  "2310080002": {
+    "mean_confidence": 0.9523684978485107,
+    "std_confidence": 0.10433194041252136,
+    "max_confidence": 0.9957897067070007,
+    "min_confidence": 0.22683273255825043,
+    "num_watermarks": 252,
+    "high_confidence_count": 238
+  },
+  "2310080003": {
+    "mean_confidence": 0.952409029006958,
+    "std_confidence": 0.10422622412443161,
+    "max_confidence": 0.9958088994026184,
+    "min_confidence": 0.2255721539258957,
+    "num_watermarks": 252,
+    "high_confidence_count": 238
+  },
+  "2310080004": {
+    "mean_confidence": 0.952407717704773,
+    "std_confidence": 0.10422233492136002,
+    "max_confidence": 0.9958072304725647,
+    "min_confidence": 0.22683273255825043,
+    "num_watermarks": 252,
+    "high_confidence_count": 238
+  },
+  "2310080005": {
+    "mean_confidence": 0.9524336457252502,
+    "std_confidence": 0.10419844090938568,
+    "max_confidence": 0.9958088994026184,
+    "min_confidence": 0.22557218372821808,
+    "num_watermarks": 252,
+    "high_confidence_count": 238
+  },
+  "2310080006": {
+    "mean_confidence": 0.9523934125900269,
+    "std_confidence": 0.10421524196863174,
+    "max_confidence": 0.9957897067070007,
+    "min_confidence": 0.22683273255825043,
+    "num_watermarks": 252,
+    "high_confidence_count": 238
+  },
+  "2310080007": {
+    "mean_confidence": 0.9523879289627075,
+    "std_confidence": 0.10431473702192307,
+    "max_confidence": 0.9958088994026184,
+    "min_confidence": 0.22557216882705688,
+    "num_watermarks": 252,
+    "high_confidence_count": 238
+  },
+  "2310080008": {
+    "mean_confidence": 0.9523857235908508,
+    "std_confidence": 0.1043468713760376,
+    "max_confidence": 0.9957897067070007,
+    "min_confidence": 0.22683273255825043,
+    "num_watermarks": 252,
+    "high_confidence_count": 238
+  },
+  "2310080009": {
+    "mean_confidence": 0.9521403312683105,
+    "std_confidence": 0.10468149185180664,
+    "max_confidence": 0.9957897067070007,
+    "min_confidence": 0.22683273255825043,
+    "num_watermarks": 250,
+    "high_confidence_count": 236
+  },
+  "2310080010": {
+    "mean_confidence": 0.9523646235466003,
+    "std_confidence": 0.1043299213051796,
+    "max_confidence": 0.9957897067070007,
+    "min_confidence": 0.22683273255825043,
+    "num_watermarks": 252,
+    "high_confidence_count": 238
+  },
+  "2310080011": {
+    "mean_confidence": 0.952388346195221,
+    "std_confidence": 0.10422983020544052,
+    "max_confidence": 0.9958088994026184,
+    "min_confidence": 0.22683273255825043,
+    "num_watermarks": 252,
+    "high_confidence_count": 238
+  },
+  "2310080012": {
+    "mean_confidence": 0.9523938298225403,
+    "std_confidence": 0.10432539880275726,
+    "max_confidence": 0.9958088994026184,
+    "min_confidence": 0.22683273255825043,
+    "num_watermarks": 252,
+    "high_confidence_count": 238
+  },
+  "2310080013": {
+    "mean_confidence": 0.9523929953575134,
+    "std_confidence": 0.10426102578639984,
+    "max_confidence": 0.9957897067070007,
+    "min_confidence": 0.2255721539258957,
+    "num_watermarks": 252,
+    "high_confidence_count": 237
+  },
+  "2310080014": {
+    "mean_confidence": 0.9524218440055847,
+    "std_confidence": 0.10418651252985,
+    "max_confidence": 0.9957897067070007,
+    "min_confidence": 0.22683273255825043,
+    "num_watermarks": 252,
+    "high_confidence_count": 238
+  },
+  "2310080015": {
+    "mean_confidence": 0.952384352684021,
+    "std_confidence": 0.10429444164037704,
+    "max_confidence": 0.9957897067070007,
+    "min_confidence": 0.22683273255825043,
+    "num_watermarks": 252,
+    "high_confidence_count": 238
+  },
+  "2310080016": {
+    "mean_confidence": 0.9523667097091675,
+    "std_confidence": 0.10421514511108398,
+    "max_confidence": 0.9958088994026184,
+    "min_confidence": 0.2255721539258957,
+    "num_watermarks": 252,
+    "high_confidence_count": 237
+  },
+  "2310080017": {
+    "mean_confidence": 0.9523907899856567,
+    "std_confidence": 0.10421640425920486,
+    "max_confidence": 0.9957897067070007,
+    "min_confidence": 0.22683273255825043,
+    "num_watermarks": 252,
+    "high_confidence_count": 238
+  },
+  "2310080018": {
+    "mean_confidence": 0.9523941278457642,
+    "std_confidence": 0.10433688014745712,
+    "max_confidence": 0.9957897067070007,
+    "min_confidence": 0.22557216882705688,
+    "num_watermarks": 252,
+    "high_confidence_count": 238
+  },
+  "2310080019": {
+    "mean_confidence": 0.9523925185203552,
+    "std_confidence": 0.10435688495635986,
+    "max_confidence": 0.9958088994026184,
+    "min_confidence": 0.22683273255825043,
+    "num_watermarks": 252,
+    "high_confidence_count": 237
+  },
+  "2310080020": {
+    "mean_confidence": 0.9524107575416565,
+    "std_confidence": 0.10421155393123627,
+    "max_confidence": 0.9958088994026184,
+    "min_confidence": 0.22683273255825043,
+    "num_watermarks": 252,
+    "high_confidence_count": 237
+  },
+  "2310080021": {
+    "mean_confidence": 0.9523720145225525,
+    "std_confidence": 0.10433329641819,
+    "max_confidence": 0.9958088994026184,
+    "min_confidence": 0.2255721539258957,
+    "num_watermarks": 252,
+    "high_confidence_count": 237
+  },
+  "2310080022": {
+    "mean_confidence": 0.9523841142654419,
+    "std_confidence": 0.10424409061670303,
+    "max_confidence": 0.9957897067070007,
+    "min_confidence": 0.22683273255825043,
+    "num_watermarks": 252,
+    "high_confidence_count": 238
+  },
+  "2310080023": {
+    "mean_confidence": 0.9523912668228149,
+    "std_confidence": 0.10432179272174835,
+    "max_confidence": 0.9958088994026184,
+    "min_confidence": 0.22683273255825043,
+    "num_watermarks": 252,
+    "high_confidence_count": 238
+  },
+  "2310080024": {
+    "mean_confidence": 0.9524051547050476,
+    "std_confidence": 0.10419372469186783,
+    "max_confidence": 0.9957897067070007,
+    "min_confidence": 0.22683273255825043,
+    "num_watermarks": 252,
+    "high_confidence_count": 238
+  },
+  "2310080025": {
+    "mean_confidence": 0.9523725509643555,
+    "std_confidence": 0.10444232076406479,
+    "max_confidence": 0.9957897067070007,
+    "min_confidence": 0.22683273255825043,
+    "num_watermarks": 252,
+    "high_confidence_count": 238
+  },
+  "2310080026": {
+    "mean_confidence": 0.9524169564247131,
+    "std_confidence": 0.10418202728033066,
+    "max_confidence": 0.9958088994026184,
+    "min_confidence": 0.22683273255825043,
+    "num_watermarks": 252,
+    "high_confidence_count": 237
+  },
+  "2310080027": {
+    "mean_confidence": 0.9523780345916748,
+    "std_confidence": 0.10419103503227234,
+    "max_confidence": 0.9958072304725647,
+    "min_confidence": 0.22683273255825043,
+    "num_watermarks": 252,
+    "high_confidence_count": 238
+  },
+  "2310080028": {
+    "mean_confidence": 0.9523904919624329,
+    "std_confidence": 0.10422134399414062,
+    "max_confidence": 0.9958072304725647,
+    "min_confidence": 0.22557218372821808,
+    "num_watermarks": 252,
+    "high_confidence_count": 238
+  },
+  "2310080029": {
+    "mean_confidence": 0.9523821473121643,
+    "std_confidence": 0.1042952761054039,
+    "max_confidence": 0.9958088994026184,
+    "min_confidence": 0.22683273255825043,
+    "num_watermarks": 252,
+    "high_confidence_count": 238
+  },
+  "2310080030": {
+    "mean_confidence": 0.9523928761482239,
+    "std_confidence": 0.1042175143957138,
+    "max_confidence": 0.9958072304725647,
+    "min_confidence": 0.22683273255825043,
+    "num_watermarks": 252,
+    "high_confidence_count": 238
+  },
+  "2310080031": {
+    "mean_confidence": 0.9523724317550659,
+    "std_confidence": 0.10425921529531479,
+    "max_confidence": 0.9958072304725647,
+    "min_confidence": 0.22683273255825043,
+    "num_watermarks": 252,
+    "high_confidence_count": 238
+  },
+  "2310080032": {
+    "mean_confidence": 0.952353835105896,
+    "std_confidence": 0.10441629588603973,
+    "max_confidence": 0.9957897067070007,
+    "min_confidence": 0.22683273255825043,
+    "num_watermarks": 252,
+    "high_confidence_count": 237
+  },
+  "2310080033": {
+    "mean_confidence": 0.9523758888244629,
+    "std_confidence": 0.10430826246738434,
+    "max_confidence": 0.9957897067070007,
+    "min_confidence": 0.22683273255825043,
+    "num_watermarks": 252,
+    "high_confidence_count": 237
+  },
+  "2310080034": {
+    "mean_confidence": 0.9523821473121643,
+    "std_confidence": 0.10421272367238998,
+    "max_confidence": 0.9957897067070007,
+    "min_confidence": 0.22557218372821808,
+    "num_watermarks": 252,
+    "high_confidence_count": 238
+  },
+  "2310080035": {
+    "mean_confidence": 0.9523832201957703,
+    "std_confidence": 0.10430265963077545,
+    "max_confidence": 0.9957897067070007,
+    "min_confidence": 0.22683273255825043,
+    "num_watermarks": 252,
+    "high_confidence_count": 237
+  },
+  "2310080036": {
+    "mean_confidence": 0.952392578125,
+    "std_confidence": 0.10419536381959915,
+    "max_confidence": 0.9957897067070007,
+    "min_confidence": 0.22683273255825043,
+    "num_watermarks": 252,
+    "high_confidence_count": 237
+  },
+  "2310080037": {
+    "mean_confidence": 0.9523951411247253,
+    "std_confidence": 0.10421611368656158,
+    "max_confidence": 0.9957897067070007,
+    "min_confidence": 0.22683273255825043,
+    "num_watermarks": 252,
+    "high_confidence_count": 238
+  },
+  "2310080038": {
+    "mean_confidence": 0.9523945450782776,
+    "std_confidence": 0.10431693494319916,
+    "max_confidence": 0.9958072304725647,
+    "min_confidence": 0.22683273255825043,
+    "num_watermarks": 252,
+    "high_confidence_count": 238
+  },
+  "2310080039": {
+    "mean_confidence": 0.9523897767066956,
+    "std_confidence": 0.10421343147754669,
+    "max_confidence": 0.9957897067070007,
+    "min_confidence": 0.22683273255825043,
+    "num_watermarks": 252,
+    "high_confidence_count": 238
+  },
+  "2310080040": {
+    "mean_confidence": 0.952360987663269,
+    "std_confidence": 0.10444384068250656,
+    "max_confidence": 0.9958072304725647,
+    "min_confidence": 0.22683273255825043,
+    "num_watermarks": 252,
+    "high_confidence_count": 238
+  },
+  "2310080041": {
+    "mean_confidence": 0.9523718953132629,
+    "std_confidence": 0.1043260470032692,
+    "max_confidence": 0.9958072304725647,
+    "min_confidence": 0.22683273255825043,
+    "num_watermarks": 252,
+    "high_confidence_count": 238
+  },
+  "2310080042": {
+    "mean_confidence": 0.9523879885673523,
+    "std_confidence": 0.10437358915805817,
+    "max_confidence": 0.9958088994026184,
+    "min_confidence": 0.2255721241235733,
+    "num_watermarks": 252,
+    "high_confidence_count": 238
+  },
+  "2310080043": {
+    "mean_confidence": 0.9523791074752808,
+    "std_confidence": 0.10420848429203033,
+    "max_confidence": 0.9958088994026184,
+    "min_confidence": 0.22683273255825043,
+    "num_watermarks": 252,
+    "high_confidence_count": 238
+  },
+  "2310080044": {
+    "mean_confidence": 0.9524053335189819,
+    "std_confidence": 0.10420767962932587,
+    "max_confidence": 0.9957897067070007,
+    "min_confidence": 0.22683273255825043,
+    "num_watermarks": 252,
+    "high_confidence_count": 238
+  },
+  "2310080045": {
+    "mean_confidence": 0.9524096250534058,
+    "std_confidence": 0.10422459244728088,
+    "max_confidence": 0.9958072304725647,
+    "min_confidence": 0.22557218372821808,
+    "num_watermarks": 252,
+    "high_confidence_count": 237
+  },
+  "2310080046": {
+    "mean_confidence": 0.9523996114730835,
+    "std_confidence": 0.10424342006444931,
+    "max_confidence": 0.9957897067070007,
+    "min_confidence": 0.22683273255825043,
+    "num_watermarks": 252,
+    "high_confidence_count": 238
+  },
+  "2310080047": {
+    "mean_confidence": 0.9524127244949341,
+    "std_confidence": 0.10418340563774109,
+    "max_confidence": 0.9958072304725647,
+    "min_confidence": 0.22683273255825043,
+    "num_watermarks": 252,
+    "high_confidence_count": 237
+  },
+  "2310080048": {
+    "mean_confidence": 0.9524052143096924,
+    "std_confidence": 0.1042458638548851,
+    "max_confidence": 0.9958088994026184,
+    "min_confidence": 0.2255721539258957,
+    "num_watermarks": 252,
+    "high_confidence_count": 238
+  },
+  "2310080049": {
+    "mean_confidence": 0.9524188041687012,
+    "std_confidence": 0.10419049113988876,
+    "max_confidence": 0.9958072304725647,
+    "min_confidence": 0.22683273255825043,
+    "num_watermarks": 252,
+    "high_confidence_count": 238
+  },
+  "2310080050": {
+    "mean_confidence": 0.9523941278457642,
+    "std_confidence": 0.10423847287893295,
+    "max_confidence": 0.9957897067070007,
+    "min_confidence": 0.22683273255825043,
+    "num_watermarks": 252,
+    "high_confidence_count": 238
+  },
+  "2310080051": {
+    "mean_confidence": 0.9523859620094299,
+    "std_confidence": 0.10419197380542755,
+    "max_confidence": 0.9957897067070007,
+    "min_confidence": 0.22683273255825043,
+    "num_watermarks": 252,
+    "high_confidence_count": 237
+  },
+  "2310080052": {
+    "mean_confidence": 0.9523829221725464,
+    "std_confidence": 0.10435275733470917,
+    "max_confidence": 0.9957897067070007,
+    "min_confidence": 0.2255721539258957,
+    "num_watermarks": 252,
+    "high_confidence_count": 238
+  },
+  "2310080053": {
+    "mean_confidence": 0.9524015784263611,
+    "std_confidence": 0.10432346165180206,
+    "max_confidence": 0.9957897067070007,
+    "min_confidence": 0.22557216882705688,
+    "num_watermarks": 252,
+    "high_confidence_count": 238
+  },
+  "2310080054": {
+    "mean_confidence": 0.9524114727973938,
+    "std_confidence": 0.10426106303930283,
+    "max_confidence": 0.9958088994026184,
+    "min_confidence": 0.2255721539258957,
+    "num_watermarks": 252,
+    "high_confidence_count": 238
+  },
+  "2310080055": {
+    "mean_confidence": 0.9523970484733582,
+    "std_confidence": 0.10424616187810898,
+    "max_confidence": 0.9957897067070007,
+    "min_confidence": 0.2255721539258957,
+    "num_watermarks": 252,
+    "high_confidence_count": 238
+  },
+  "2310080056": {
+    "mean_confidence": 0.9523659348487854,
+    "std_confidence": 0.10443908721208572,
+    "max_confidence": 0.9958088994026184,
+    "min_confidence": 0.22683273255825043,
+    "num_watermarks": 252,
+    "high_confidence_count": 238
+  },
+  "2310080057": {
+    "mean_confidence": 0.9523543119430542,
+    "std_confidence": 0.10433420538902283,
+    "max_confidence": 0.9958088994026184,
+    "min_confidence": 0.22683273255825043,
+    "num_watermarks": 252,
+    "high_confidence_count": 238
+  },
+  "2310080058": {
+    "mean_confidence": 0.952366292476654,
+    "std_confidence": 0.10431195795536041,
+    "max_confidence": 0.9957897067070007,
+    "min_confidence": 0.22683273255825043,
+    "num_watermarks": 252,
+    "high_confidence_count": 238
+  },
+  "2310080059": {
+    "mean_confidence": 0.9523890614509583,
+    "std_confidence": 0.10431206971406937,
+    "max_confidence": 0.9957897067070007,
+    "min_confidence": 0.22557218372821808,
+    "num_watermarks": 252,
+    "high_confidence_count": 237
+  },
+  "2310080060": {
+    "mean_confidence": 0.9523734450340271,
+    "std_confidence": 0.10423263162374496,
+    "max_confidence": 0.9957897067070007,
+    "min_confidence": 0.22683273255825043,
+    "num_watermarks": 252,
+    "high_confidence_count": 238
+  },
+  "2310080061": {
+    "mean_confidence": 0.9524016380310059,
+    "std_confidence": 0.10420361161231995,
+    "max_confidence": 0.9957897067070007,
+    "min_confidence": 0.22557218372821808,
+    "num_watermarks": 252,
+    "high_confidence_count": 238
+  },
+  "2310080062": {
+    "mean_confidence": 0.9523757696151733,
+    "std_confidence": 0.10423333942890167,
+    "max_confidence": 0.9957897067070007,
+    "min_confidence": 0.22683273255825043,
+    "num_watermarks": 252,
+    "high_confidence_count": 238
+  },
+  "2310080063": {
+    "mean_confidence": 0.9523938894271851,
+    "std_confidence": 0.10422993451356888,
+    "max_confidence": 0.9957897067070007,
+    "min_confidence": 0.22683273255825043,
+    "num_watermarks": 252,
+    "high_confidence_count": 238
+  },
+  "2310080064": {
+    "mean_confidence": 0.9524128437042236,
+    "std_confidence": 0.10423264652490616,
+    "max_confidence": 0.9957897067070007,
+    "min_confidence": 0.22557218372821808,
+    "num_watermarks": 252,
+    "high_confidence_count": 237
+  },
+  "2310080065": {
+    "mean_confidence": 0.9523739218711853,
+    "std_confidence": 0.10431075841188431,
+    "max_confidence": 0.9958088994026184,
+    "min_confidence": 0.22557218372821808,
+    "num_watermarks": 252,
+    "high_confidence_count": 238
+  },
+  "2310080066": {
+    "mean_confidence": 0.9523881673812866,
+    "std_confidence": 0.10419667512178421,
+    "max_confidence": 0.9957897067070007,
+    "min_confidence": 0.22683273255825043,
+    "num_watermarks": 252,
+    "high_confidence_count": 238
+  },
+  "2310080067": {
+    "mean_confidence": 0.9523744583129883,
+    "std_confidence": 0.10433816909790039,
+    "max_confidence": 0.9957897067070007,
+    "min_confidence": 0.22683273255825043,
+    "num_watermarks": 252,
+    "high_confidence_count": 238
+  },
+  "2310080068": {
+    "mean_confidence": 0.9523720145225525,
+    "std_confidence": 0.10429775714874268,
+    "max_confidence": 0.9958088994026184,
+    "min_confidence": 0.22683273255825043,
+    "num_watermarks": 252,
+    "high_confidence_count": 238
+  },
+  "2310080069": {
+    "mean_confidence": 0.952373206615448,
+    "std_confidence": 0.10434766113758087,
+    "max_confidence": 0.9958088994026184,
+    "min_confidence": 0.22557216882705688,
+    "num_watermarks": 252,
+    "high_confidence_count": 238
+  },
+  "2310080070": {
+    "mean_confidence": 0.9523659944534302,
+    "std_confidence": 0.10431066155433655,
+    "max_confidence": 0.9958088994026184,
+    "min_confidence": 0.22683273255825043,
+    "num_watermarks": 252,
+    "high_confidence_count": 238
+  },
+  "2310080071": {
+    "mean_confidence": 0.9523907899856567,
+    "std_confidence": 0.10419076681137085,
+    "max_confidence": 0.9958088994026184,
+    "min_confidence": 0.22683273255825043,
+    "num_watermarks": 252,
+    "high_confidence_count": 238
+  },
+  "2310080072": {
+    "mean_confidence": 0.9523680210113525,
+    "std_confidence": 0.10436633229255676,
+    "max_confidence": 0.9957897067070007,
+    "min_confidence": 0.22683273255825043,
+    "num_watermarks": 252,
+    "high_confidence_count": 238
+  },
+  "2310080073": {
+    "mean_confidence": 0.9523766040802002,
+    "std_confidence": 0.10423357039690018,
+    "max_confidence": 0.9957897067070007,
+    "min_confidence": 0.22683273255825043,
+    "num_watermarks": 252,
+    "high_confidence_count": 238
+  },
+  "2310080074": {
+    "mean_confidence": 0.9523316621780396,
+    "std_confidence": 0.10442037880420685,
+    "max_confidence": 0.9957897067070007,
+    "min_confidence": 0.22683273255825043,
+    "num_watermarks": 252,
+    "high_confidence_count": 238
+  },
+  "2310080075": {
+    "mean_confidence": 0.952417254447937,
+    "std_confidence": 0.10423555970191956,
+    "max_confidence": 0.9958072304725647,
+    "min_confidence": 0.22683273255825043,
+    "num_watermarks": 252,
+    "high_confidence_count": 238
+  },
+  "2310080076": {
+    "mean_confidence": 0.9523895382881165,
+    "std_confidence": 0.1042276918888092,
+    "max_confidence": 0.9958072304725647,
+    "min_confidence": 0.22683273255825043,
+    "num_watermarks": 252,
+    "high_confidence_count": 238
+  },
+  "2310080077": {
+    "mean_confidence": 0.9524064064025879,
+    "std_confidence": 0.10421815514564514,
+    "max_confidence": 0.9958088994026184,
+    "min_confidence": 0.22683273255825043,
+    "num_watermarks": 252,
+    "high_confidence_count": 237
+  },
+  "2310080078": {
+    "mean_confidence": 0.9523851871490479,
+    "std_confidence": 0.10429556667804718,
+    "max_confidence": 0.9958088994026184,
+    "min_confidence": 0.22683273255825043,
+    "num_watermarks": 252,
+    "high_confidence_count": 238
+  },
+  "2310080079": {
+    "mean_confidence": 0.9523783922195435,
+    "std_confidence": 0.10430837422609329,
+    "max_confidence": 0.9958088994026184,
+    "min_confidence": 0.22683273255825043,
+    "num_watermarks": 252,
+    "high_confidence_count": 238
+  },
+  "2310080080": {
+    "mean_confidence": 0.9523755311965942,
+    "std_confidence": 0.10431523621082306,
+    "max_confidence": 0.9958088994026184,
+    "min_confidence": 0.22683273255825043,
+    "num_watermarks": 252,
+    "high_confidence_count": 238
+  },
+  "2310080081": {
+    "mean_confidence": 0.9523904323577881,
+    "std_confidence": 0.10435029119253159,
+    "max_confidence": 0.9958072304725647,
+    "min_confidence": 0.22683273255825043,
+    "num_watermarks": 252,
+    "high_confidence_count": 238
+  },
+  "2310080082": {
+    "mean_confidence": 0.9523910284042358,
+    "std_confidence": 0.10419304668903351,
+    "max_confidence": 0.9958072304725647,
+    "min_confidence": 0.22683273255825043,
+    "num_watermarks": 252,
+    "high_confidence_count": 238
+  },
+  "2310080083": {
+    "mean_confidence": 0.9523598551750183,
+    "std_confidence": 0.10419506579637527,
+    "max_confidence": 0.9957897067070007,
+    "min_confidence": 0.22683273255825043,
+    "num_watermarks": 252,
+    "high_confidence_count": 238
+  },
+  "2310080084": {
+    "mean_confidence": 0.952407717704773,
+    "std_confidence": 0.10418842732906342,
+    "max_confidence": 0.9958088994026184,
+    "min_confidence": 0.22683273255825043,
+    "num_watermarks": 252,
+    "high_confidence_count": 238
+  },
+  "2310080085": {
+    "mean_confidence": 0.9523937106132507,
+    "std_confidence": 0.1042100265622139,
+    "max_confidence": 0.9958088994026184,
+    "min_confidence": 0.22557218372821808,
+    "num_watermarks": 252,
+    "high_confidence_count": 237
+  },
+  "2310080086": {
+    "mean_confidence": 0.9523688554763794,
+    "std_confidence": 0.10433033108711243,
+    "max_confidence": 0.9958088994026184,
+    "min_confidence": 0.22683273255825043,
+    "num_watermarks": 252,
+    "high_confidence_count": 238
+  },
+  "2310080087": {
+    "mean_confidence": 0.9523622393608093,
+    "std_confidence": 0.10430105030536652,
+    "max_confidence": 0.9957897067070007,
+    "min_confidence": 0.22683273255825043,
+    "num_watermarks": 252,
+    "high_confidence_count": 237
+  },
+  "2310080088": {
+    "mean_confidence": 0.9523850679397583,
+    "std_confidence": 0.10422613471746445,
+    "max_confidence": 0.9958072304725647,
+    "min_confidence": 0.22683273255825043,
+    "num_watermarks": 252,
+    "high_confidence_count": 238
+  }
+}

@@ -1,0 +1,30 @@
+======================================================================
+WATERMARK LEAK DETECTION REPORT
+======================================================================
+
+SUMMARY:
+----------------------------------------------------------------------
+Submitted PDF: QP_2310080002.pdf
+Identified Student Roll: 2310080002
+Watermark Status: GENUINE (Decoder Verified)
+
+WATERMARK ANALYSIS:
+----------------------------------------------------------------------
+Total Patches: 252
+Watermarks Extracted: 252
+Mean Confidence: 0.9524
+Std Deviation: 0.1044
+High-Confidence Marks (>0.9): 238
+
+CONCLUSION:
+----------------------------------------------------------------------
+[CONFIRMED] Question paper leaked by student 2310080002
+
+Evidence:
+  1. Each question paper was uniquely watermarked
+  2. Watermark contains 252 invisible marks (30% patch coverage)
+  3. Decoder extracted 252 marks with 95.2% confidence
+  4. Watermark pattern uniquely identifies Roll 2310080002
+
+This PDF was generated exclusively for student 2310080002.
+No other student has this exact watermark pattern.

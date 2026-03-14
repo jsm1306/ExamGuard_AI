@@ -1,0 +1,767 @@
+WATERMARK EXTRACTION REPORT
+======================================================================
+PDF File: watermarked_papers/QP_2310080008.pdf
+Decoder Model: models/decoder_model.h5
+Total Watermarks Extracted: 252
+Number of Pages Processed: 1
+Number of Patches Analyzed: 252
+
+======================================================================
+WATERMARKS:
+----------------------------------------------------------------------
+
+[1] Position: (640, 896)
+    Confidence: 0.9958
+
+[2] Position: (640, 1024)
+    Confidence: 0.9958
+
+[3] Position: (384, 256)
+    Confidence: 0.9957
+
+[4] Position: (384, 384)
+    Confidence: 0.9957
+
+[5] Position: (2176, 384)
+    Confidence: 0.9957
+
+[6] Position: (2176, 512)
+    Confidence: 0.9957
+
+[7] Position: (2176, 640)
+    Confidence: 0.9957
+
+[8] Position: (2176, 768)
+    Confidence: 0.9957
+
+[9] Position: (2176, 896)
+    Confidence: 0.9957
+
+[10] Position: (2176, 1024)
+    Confidence: 0.9957
+
+[11] Position: (2176, 1408)
+    Confidence: 0.9956
+
+[12] Position: (2176, 1664)
+    Confidence: 0.9956
+
+[13] Position: (128, 128)
+    Confidence: 0.9956
+
+[14] Position: (1408, 512)
+    Confidence: 0.9956
+
+[15] Position: (1792, 512)
+    Confidence: 0.9956
+
+[16] Position: (1792, 1024)
+    Confidence: 0.9956
+
+[17] Position: (1920, 512)
+    Confidence: 0.9956
+
+[18] Position: (1920, 1024)
+    Confidence: 0.9956
+
+[19] Position: (128, 256)
+    Confidence: 0.9956
+
+[20] Position: (128, 1536)
+    Confidence: 0.9956
+
+[21] Position: (1664, 1024)
+    Confidence: 0.9956
+
+[22] Position: (1920, 256)
+    Confidence: 0.9956
+
+[23] Position: (1408, 256)
+    Confidence: 0.9956
+
+[24] Position: (1408, 384)
+    Confidence: 0.9956
+
+[25] Position: (1920, 384)
+    Confidence: 0.9956
+
+[26] Position: (1920, 1664)
+    Confidence: 0.9956
+
+[27] Position: (1408, 1664)
+    Confidence: 0.9956
+
+[28] Position: (1664, 1664)
+    Confidence: 0.9956
+
+[29] Position: (128, 1664)
+    Confidence: 0.9956
+
+[30] Position: (256, 128)
+    Confidence: 0.9956
+
+[31] Position: (1920, 1408)
+    Confidence: 0.9956
+
+[32] Position: (1408, 1408)
+    Confidence: 0.9956
+
+[33] Position: (2176, 0)
+    Confidence: 0.9956
+
+[34] Position: (1664, 1408)
+    Confidence: 0.9956
+
+[35] Position: (256, 256)
+    Confidence: 0.9956
+
+[36] Position: (256, 1536)
+    Confidence: 0.9956
+
+[37] Position: (128, 0)
+    Confidence: 0.9956
+
+[38] Position: (1024, 0)
+    Confidence: 0.9956
+
+[39] Position: (1408, 0)
+    Confidence: 0.9956
+
+[40] Position: (1664, 0)
+    Confidence: 0.9956
+
+[41] Position: (1920, 0)
+    Confidence: 0.9956
+
+[42] Position: (1792, 0)
+    Confidence: 0.9956
+
+[43] Position: (1280, 0)
+    Confidence: 0.9956
+
+[44] Position: (1280, 1664)
+    Confidence: 0.9956
+
+[45] Position: (1024, 1664)
+    Confidence: 0.9956
+
+[46] Position: (1792, 1664)
+    Confidence: 0.9955
+
+[47] Position: (512, 1024)
+    Confidence: 0.9955
+
+[48] Position: (2048, 0)
+    Confidence: 0.9955
+
+[49] Position: (1152, 0)
+    Confidence: 0.9955
+
+[50] Position: (896, 0)
+    Confidence: 0.9955
+
+[51] Position: (1536, 0)
+    Confidence: 0.9954
+
+[52] Position: (256, 0)
+    Confidence: 0.9954
+
+[53] Position: (0, 128)
+    Confidence: 0.9954
+
+[54] Position: (384, 0)
+    Confidence: 0.9954
+
+[55] Position: (0, 256)
+    Confidence: 0.9954
+
+[56] Position: (0, 768)
+    Confidence: 0.9954
+
+[57] Position: (768, 0)
+    Confidence: 0.9953
+
+[58] Position: (896, 1664)
+    Confidence: 0.9953
+
+[59] Position: (512, 0)
+    Confidence: 0.9953
+
+[60] Position: (1536, 1664)
+    Confidence: 0.9953
+
+[61] Position: (256, 1664)
+    Confidence: 0.9953
+
+[62] Position: (1152, 1664)
+    Confidence: 0.9953
+
+[63] Position: (640, 0)
+    Confidence: 0.9952
+
+[64] Position: (2048, 1664)
+    Confidence: 0.9952
+
+[65] Position: (1920, 128)
+    Confidence: 0.9951
+
+[66] Position: (1664, 128)
+    Confidence: 0.9951
+
+[67] Position: (1408, 128)
+    Confidence: 0.9951
+
+[68] Position: (384, 512)
+    Confidence: 0.9951
+
+[69] Position: (2176, 1280)
+    Confidence: 0.9950
+
+[70] Position: (0, 384)
+    Confidence: 0.9950
+
+[71] Position: (384, 1024)
+    Confidence: 0.9949
+
+[72] Position: (640, 1664)
+    Confidence: 0.9949
+
+[73] Position: (1408, 1280)
+    Confidence: 0.9949
+
+[74] Position: (1920, 1280)
+    Confidence: 0.9949
+
+[75] Position: (768, 1664)
+    Confidence: 0.9949
+
+[76] Position: (1536, 1408)
+    Confidence: 0.9948
+
+[77] Position: (0, 512)
+    Confidence: 0.9948
+
+[78] Position: (1664, 1280)
+    Confidence: 0.9948
+
+[79] Position: (0, 640)
+    Confidence: 0.9948
+
+[80] Position: (1152, 1408)
+    Confidence: 0.9947
+
+[81] Position: (1152, 1280)
+    Confidence: 0.9947
+
+[82] Position: (1536, 1280)
+    Confidence: 0.9944
+
+[83] Position: (896, 1280)
+    Confidence: 0.9940
+
+[84] Position: (128, 1408)
+    Confidence: 0.9936
+
+[85] Position: (1280, 1280)
+    Confidence: 0.9934
+
+[86] Position: (2048, 1280)
+    Confidence: 0.9932
+
+[87] Position: (384, 1408)
+    Confidence: 0.9931
+
+[88] Position: (768, 1024)
+    Confidence: 0.9929
+
+[89] Position: (1024, 1280)
+    Confidence: 0.9928
+
+[90] Position: (384, 640)
+    Confidence: 0.9928
+
+[91] Position: (1792, 128)
+    Confidence: 0.9924
+
+[92] Position: (2176, 1536)
+    Confidence: 0.9920
+
+[93] Position: (1792, 1280)
+    Confidence: 0.9919
+
+[94] Position: (384, 1664)
+    Confidence: 0.9919
+
+[95] Position: (256, 1408)
+    Confidence: 0.9919
+
+[96] Position: (1920, 1536)
+    Confidence: 0.9914
+
+[97] Position: (1664, 1536)
+    Confidence: 0.9914
+
+[98] Position: (1408, 1536)
+    Confidence: 0.9914
+
+[99] Position: (384, 768)
+    Confidence: 0.9914
+
+[100] Position: (2176, 1152)
+    Confidence: 0.9908
+
+[101] Position: (768, 1280)
+    Confidence: 0.9902
+
+[102] Position: (1152, 1536)
+    Confidence: 0.9901
+
+[103] Position: (1536, 1536)
+    Confidence: 0.9900
+
+[104] Position: (640, 1280)
+    Confidence: 0.9899
+
+[105] Position: (1536, 128)
+    Confidence: 0.9892
+
+[106] Position: (1664, 1152)
+    Confidence: 0.9889
+
+[107] Position: (1024, 1152)
+    Confidence: 0.9889
+
+[108] Position: (1280, 1152)
+    Confidence: 0.9885
+
+[109] Position: (1408, 1152)
+    Confidence: 0.9885
+
+[110] Position: (1792, 1152)
+    Confidence: 0.9885
+
+[111] Position: (1920, 1152)
+    Confidence: 0.9885
+
+[112] Position: (896, 1536)
+    Confidence: 0.9879
+
+[113] Position: (2048, 1152)
+    Confidence: 0.9878
+
+[114] Position: (384, 896)
+    Confidence: 0.9877
+
+[115] Position: (1536, 1152)
+    Confidence: 0.9874
+
+[116] Position: (1152, 1152)
+    Confidence: 0.9872
+
+[117] Position: (512, 1664)
+    Confidence: 0.9861
+
+[118] Position: (384, 1536)
+    Confidence: 0.9860
+
+[119] Position: (640, 1152)
+    Confidence: 0.9858
+
+[120] Position: (768, 1152)
+    Confidence: 0.9854
+
+[121] Position: (1792, 1536)
+    Confidence: 0.9844
+
+[122] Position: (896, 1152)
+    Confidence: 0.9844
+
+[123] Position: (384, 128)
+    Confidence: 0.9842
+
+[124] Position: (2176, 128)
+    Confidence: 0.9839
+
+[125] Position: (1280, 512)
+    Confidence: 0.9836
+
+[126] Position: (896, 1408)
+    Confidence: 0.9834
+
+[127] Position: (1280, 1536)
+    Confidence: 0.9831
+
+[128] Position: (0, 896)
+    Confidence: 0.9830
+
+[129] Position: (0, 0)
+    Confidence: 0.9830
+
+[130] Position: (1024, 1536)
+    Confidence: 0.9829
+
+[131] Position: (2048, 1536)
+    Confidence: 0.9828
+
+[132] Position: (1152, 640)
+    Confidence: 0.9813
+
+[133] Position: (384, 1152)
+    Confidence: 0.9797
+
+[134] Position: (1024, 1408)
+    Confidence: 0.9764
+
+[135] Position: (2176, 256)
+    Confidence: 0.9764
+
+[136] Position: (1792, 1408)
+    Confidence: 0.9763
+
+[137] Position: (0, 1408)
+    Confidence: 0.9760
+
+[138] Position: (896, 128)
+    Confidence: 0.9760
+
+[139] Position: (2048, 1408)
+    Confidence: 0.9750
+
+[140] Position: (1536, 1024)
+    Confidence: 0.9749
+
+[141] Position: (1152, 1024)
+    Confidence: 0.9746
+
+[142] Position: (0, 1280)
+    Confidence: 0.9745
+
+[143] Position: (1280, 1408)
+    Confidence: 0.9745
+
+[144] Position: (384, 1280)
+    Confidence: 0.9745
+
+[145] Position: (1536, 384)
+    Confidence: 0.9742
+
+[146] Position: (1152, 896)
+    Confidence: 0.9738
+
+[147] Position: (1792, 384)
+    Confidence: 0.9736
+
+[148] Position: (1152, 768)
+    Confidence: 0.9732
+
+[149] Position: (512, 896)
+    Confidence: 0.9728
+
+[150] Position: (1920, 896)
+    Confidence: 0.9726
+
+[151] Position: (1152, 128)
+    Confidence: 0.9717
+
+[152] Position: (768, 1536)
+    Confidence: 0.9714
+
+[153] Position: (0, 1024)
+    Confidence: 0.9711
+
+[154] Position: (1664, 896)
+    Confidence: 0.9704
+
+[155] Position: (0, 1152)
+    Confidence: 0.9702
+
+[156] Position: (512, 1152)
+    Confidence: 0.9701
+
+[157] Position: (640, 1536)
+    Confidence: 0.9683
+
+[158] Position: (1536, 512)
+    Confidence: 0.9676
+
+[159] Position: (0, 1664)
+    Confidence: 0.9674
+
+[160] Position: (768, 896)
+    Confidence: 0.9674
+
+[161] Position: (0, 1536)
+    Confidence: 0.9672
+
+[162] Position: (1280, 128)
+    Confidence: 0.9671
+
+[163] Position: (1536, 256)
+    Confidence: 0.9669
+
+[164] Position: (2048, 128)
+    Confidence: 0.9664
+
+[165] Position: (1408, 640)
+    Confidence: 0.9650
+
+[166] Position: (640, 768)
+    Confidence: 0.9650
+
+[167] Position: (512, 1536)
+    Confidence: 0.9635
+
+[168] Position: (1664, 384)
+    Confidence: 0.9619
+
+[169] Position: (512, 768)
+    Confidence: 0.9617
+
+[170] Position: (512, 1280)
+    Confidence: 0.9617
+
+[171] Position: (1792, 640)
+    Confidence: 0.9617
+
+[172] Position: (768, 768)
+    Confidence: 0.9606
+
+[173] Position: (1280, 384)
+    Confidence: 0.9598
+
+[174] Position: (512, 512)
+    Confidence: 0.9595
+
+[175] Position: (512, 128)
+    Confidence: 0.9588
+
+[176] Position: (1024, 128)
+    Confidence: 0.9582
+
+[177] Position: (1408, 1024)
+    Confidence: 0.9581
+
+[178] Position: (512, 256)
+    Confidence: 0.9563
+
+[179] Position: (1792, 896)
+    Confidence: 0.9559
+
+[180] Position: (768, 128)
+    Confidence: 0.9546
+
+[181] Position: (1664, 512)
+    Confidence: 0.9546
+
+[182] Position: (2048, 256)
+    Confidence: 0.9531
+
+[183] Position: (1152, 512)
+    Confidence: 0.9525
+
+[184] Position: (2048, 1024)
+    Confidence: 0.9523
+
+[185] Position: (1280, 1024)
+    Confidence: 0.9523
+
+[186] Position: (512, 384)
+    Confidence: 0.9511
+
+[187] Position: (2048, 896)
+    Confidence: 0.9491
+
+[188] Position: (2048, 640)
+    Confidence: 0.9490
+
+[189] Position: (768, 640)
+    Confidence: 0.9482
+
+[190] Position: (1152, 384)
+    Confidence: 0.9480
+
+[191] Position: (2048, 384)
+    Confidence: 0.9478
+
+[192] Position: (1664, 640)
+    Confidence: 0.9474
+
+[193] Position: (1792, 768)
+    Confidence: 0.9461
+
+[194] Position: (1536, 640)
+    Confidence: 0.9458
+
+[195] Position: (640, 128)
+    Confidence: 0.9453
+
+[196] Position: (2048, 768)
+    Confidence: 0.9450
+
+[197] Position: (2048, 512)
+    Confidence: 0.9446
+
+[198] Position: (1280, 640)
+    Confidence: 0.9439
+
+[199] Position: (512, 640)
+    Confidence: 0.9439
+
+[200] Position: (1536, 896)
+    Confidence: 0.9433
+
+[201] Position: (1920, 640)
+    Confidence: 0.9417
+
+[202] Position: (768, 512)
+    Confidence: 0.9399
+
+[203] Position: (1408, 768)
+    Confidence: 0.9394
+
+[204] Position: (768, 1408)
+    Confidence: 0.9390
+
+[205] Position: (896, 896)
+    Confidence: 0.9382
+
+[206] Position: (1280, 768)
+    Confidence: 0.9376
+
+[207] Position: (512, 1408)
+    Confidence: 0.9374
+
+[208] Position: (1408, 896)
+    Confidence: 0.9356
+
+[209] Position: (768, 256)
+    Confidence: 0.9351
+
+[210] Position: (256, 1152)
+    Confidence: 0.9338
+
+[211] Position: (640, 1408)
+    Confidence: 0.9336
+
+[212] Position: (640, 512)
+    Confidence: 0.9328
+
+[213] Position: (1024, 1024)
+    Confidence: 0.9320
+
+[214] Position: (1152, 256)
+    Confidence: 0.9313
+
+[215] Position: (1280, 896)
+    Confidence: 0.9300
+
+[216] Position: (896, 768)
+    Confidence: 0.9290
+
+[217] Position: (896, 640)
+    Confidence: 0.9290
+
+[218] Position: (896, 1024)
+    Confidence: 0.9286
+
+[219] Position: (256, 1280)
+    Confidence: 0.9283
+
+[220] Position: (640, 384)
+    Confidence: 0.9279
+
+[221] Position: (1024, 640)
+    Confidence: 0.9259
+
+[222] Position: (896, 512)
+    Confidence: 0.9257
+
+[223] Position: (1664, 256)
+    Confidence: 0.9250
+
+[224] Position: (1024, 512)
+    Confidence: 0.9244
+
+[225] Position: (1792, 256)
+    Confidence: 0.9226
+
+[226] Position: (1024, 256)
+    Confidence: 0.9219
+
+[227] Position: (896, 256)
+    Confidence: 0.9213
+
+[228] Position: (896, 384)
+    Confidence: 0.9179
+
+[229] Position: (1920, 768)
+    Confidence: 0.9169
+
+[230] Position: (1024, 896)
+    Confidence: 0.9166
+
+[231] Position: (768, 384)
+    Confidence: 0.9162
+
+[232] Position: (640, 640)
+    Confidence: 0.9125
+
+[233] Position: (1536, 768)
+    Confidence: 0.9117
+
+[234] Position: (1024, 768)
+    Confidence: 0.9105
+
+[235] Position: (1024, 384)
+    Confidence: 0.9093
+
+[236] Position: (640, 256)
+    Confidence: 0.9078
+
+[237] Position: (1664, 768)
+    Confidence: 0.9064
+
+[238] Position: (256, 1024)
+    Confidence: 0.9006
+
+[239] Position: (256, 896)
+    Confidence: 0.8924
+
+[240] Position: (256, 768)
+    Confidence: 0.8744
+
+[241] Position: (1280, 256)
+    Confidence: 0.8665
+
+[242] Position: (256, 384)
+    Confidence: 0.8469
+
+[243] Position: (256, 512)
+    Confidence: 0.7646
+
+[244] Position: (256, 640)
+    Confidence: 0.7605
+
+[245] Position: (128, 1280)
+    Confidence: 0.5855
+
+[246] Position: (128, 1024)
+    Confidence: 0.4714
+
+[247] Position: (128, 384)
+    Confidence: 0.4641
+
+[248] Position: (128, 896)
+    Confidence: 0.4641
+
+[249] Position: (128, 1152)
+    Confidence: 0.4457
+
+[250] Position: (128, 768)
+    Confidence: 0.3822
+
+[251] Position: (128, 512)
+    Confidence: 0.2977
+
+[252] Position: (128, 640)
+    Confidence: 0.2268

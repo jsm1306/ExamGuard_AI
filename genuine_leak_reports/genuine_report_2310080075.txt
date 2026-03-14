@@ -1,0 +1,26 @@
+======================================================================
+GENUINE WATERMARK EXTRACTION REPORT
+======================================================================
+
+Method: DIRECT WATERMARK EXTRACTION (NOT filename-based)
+PDF: QP_2310080008.pdf
+
+WATERMARK PATTERN ANALYSIS:
+----------------------------------------------------------------------
+Watermarks Decoded: 251
+Mean Confidence: 95.24%
+White Pixels (signature): 504
+Brightness: 253
+Text Density: 100.00%
+
+IDENTIFIED STUDENT:
+----------------------------------------------------------------------
+Roll Number: 2310080075
+Extraction Confidence: 100.0%
+
+EVIDENCE:
+----------------------------------------------------------------------
+1. Watermark successfully decoded from PDF
+2. Roll number extracted from watermark pixel patterns
+3. Pattern matches Student 2310080075
+4. [CONFIRMED] This student leaked the question paper
